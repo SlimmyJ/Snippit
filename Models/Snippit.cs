@@ -5,6 +5,8 @@
 
     public class Snippit
     {
+        public int Id { get; set; }
+
         [StringLength(50, MinimumLength = 3)]
         public string Title { get; set; }
 

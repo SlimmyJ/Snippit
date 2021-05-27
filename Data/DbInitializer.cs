@@ -20,6 +20,7 @@
                            {
                                new Snippit
                                {
+                                   Id = 2,
                                    AuthorId = 1,
                                    LanguageId = 1,
                                    Rating = 4,
@@ -27,6 +28,7 @@
                                },
                                new Snippit
                                {
+                                   Id = 1,
                                    AuthorId = 1,
                                    LanguageId = 1,
                                    Rating = 4,
@@ -34,6 +36,7 @@
                                },
                                new Snippit
                                {
+                                   Id = 3,
                                    AuthorId = 4,
                                    LanguageId = 1,
                                    Rating = 4,
@@ -41,6 +44,7 @@
                                },
                                new Snippit
                                {
+                                   Id = 4,
                                    AuthorId = 3,
                                    LanguageId = 1,
                                    Rating = 4,
@@ -48,6 +52,7 @@
                                },
                                new Snippit
                                {
+                                   Id = 5,
                                    AuthorId = 1,
                                    LanguageId = 5,
                                    Rating = 2,
