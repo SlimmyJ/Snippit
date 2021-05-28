@@ -143,14 +143,14 @@
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var snippit = _service.Get(id);
-            await _service.Delete(await snippit);
+            var snippit = await _service.Get(id);
+            await _service.Delete(snippit);
             return RedirectToAction(nameof(Index));
         }
 
         private async Task<IActionResult> SnippitExists(int id)
         {
-          if (_service.Get(id)
+            if (_service.Get(id)
                         .IsCompletedSuccessfully)
             {
                 return Ok();

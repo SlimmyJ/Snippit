@@ -6,6 +6,7 @@
     using Snippit.Data.Repositories;
     using Snippit.Models;
 
+    // HELLO AND WELCOME - FEEL FREE TO BROWSE AROUND. ONDERTUSSEN VOEG IK U TOE AAN DE COLLABORATORS. IK WIL HIER WEL IETS VAN MAKEN, EN GEEN PROJECT. GEWOON IETS OM AF EN TOE EAAN TE PRUTSEN. MISSCHIEN ZELFS MET DAT KANBAN BOARD. 
     public class SnippitService : ISnippitService
     {
         private IGenericRepo<UserSnippit> _repo;
