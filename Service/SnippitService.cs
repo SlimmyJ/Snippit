@@ -3,10 +3,10 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
-    using Snippit.Data;
+    using Snippit.Data.Repositories;
     using Snippit.Models;
 
-    public class SnippitService
+    public class SnippitService : ISnippitService
     {
         private IGenericRepo<Snippit> _repo;
 

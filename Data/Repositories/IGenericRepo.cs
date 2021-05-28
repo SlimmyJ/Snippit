@@ -1,4 +1,4 @@
-﻿namespace Snippit.Data
+﻿namespace Snippit.Data.Repositories
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;

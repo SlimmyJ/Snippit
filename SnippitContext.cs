@@ -1,4 +1,4 @@
-﻿namespace Snippit.Data
+﻿namespace Snippit
 {
     using Microsoft.EntityFrameworkCore;
 

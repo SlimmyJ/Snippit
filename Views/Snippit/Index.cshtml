@@ -1,0 +1,30 @@
+﻿@model Snippit.Models.SnippitViewModels.SnippitViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Snippit Index</title>
+</head>
+<body>
+<div>
+    <h1>THis is the general index page - Snippit App</h1>  
+    
+    @{
+        foreach (var Snippit in Model.Snippits)
+        {
+            <h2>Snippit.Title</h2>
+            <h3>Snippit.Content</h3>
+            <h4>Snippit.Description</h4>
+            <h5>Snippit.AuthorId</h5>
+            <h6>Snippit.Summary</h6>
+         
+        }
+    }
+</div>
+</body>
+</html>
