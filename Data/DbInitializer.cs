@@ -16,9 +16,9 @@
                 return; // DB has been seeded
             }
 
-            var snippits = new Snippit[]
+            var snippits = new UserSnippit[]
                            {
-                               new Snippit
+                               new UserSnippit
                                {
                                    Id = 2,
                                    AuthorId = 1,
@@ -27,7 +27,7 @@
                                    Title = "Standard animal class",
                                    Content = "Code content"
                                },
-                               new Snippit
+                               new UserSnippit
                                {
                                    Id = 1,
                                    AuthorId = 1,
@@ -35,7 +35,7 @@
                                    Rating = 4,
                                    Title = "Standard person class"
                                },
-                               new Snippit
+                               new UserSnippit
                                {
                                    Id = 3,
                                    AuthorId = 4,
@@ -43,7 +43,7 @@
                                    Rating = 4,
                                    Title = "Standard demo class"
                                },
-                               new Snippit
+                               new UserSnippit
                                {
                                    Id = 4,
                                    AuthorId = 3,
@@ -51,7 +51,7 @@
                                    Rating = 4,
                                    Title = "Standard people class"
                                },
-                               new Snippit
+                               new UserSnippit
                                {
                                    Id = 5,
                                    AuthorId = 1,

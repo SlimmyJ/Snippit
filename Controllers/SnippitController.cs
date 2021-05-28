@@ -8,7 +8,7 @@
     using Microsoft.AspNetCore.Mvc;
 
     using Snippit.Models;
-    using Snippit.Models.SnippitViewModels;
+    using Snippit.Models.ViewModels;
     using Snippit.Service;
 
     public class SnippitController : Controller
@@ -25,10 +25,10 @@
 
             public async Task<IActionResult> Index()
             {
-                ICollection<Snippit> snippits = await _service.Get();
+                ICollection<UserSnippit> snippits = await _service.Get();
                 var viewModel = new SnippitViewModel()
                                 {
-                                    Snippits = _mapper.Map<ICollection<Snippit>>(snippits)
+                                    Snippits = _mapper.Map<ICollection<UserSnippit>>(snippits)
                                 };
 
                 return View(viewModel);
@@ -36,7 +36,7 @@
 
             public async Task<IActionResult> Detail(int id)
             {
-                Snippit snippit = await _service.Get(id);
+                UserSnippit snippit = await _service.Get(id);
                 SnippitDetailViewModel viewModel = _mapper.Map<SnippitDetailViewModel>(snippit);
 
                 return View(viewModel);
@@ -58,7 +58,7 @@
                     return View(vm);
                 }
 
-                Snippit snippitModel = _mapper.Map<Snippit>(vm);
+                UserSnippit snippitModel = _mapper.Map<UserSnippit>(vm);
                 await _service.Add(snippitModel);
                 return RedirectToAction(nameof(Index));
             }
@@ -70,7 +70,7 @@
                     return NotFound();
                 }
 
-                Snippit snippit = await _service.Get(id);
+                UserSnippit snippit = await _service.Get(id);
 
                 if (snippit == null)
                 {
@@ -92,7 +92,7 @@
                     return View(vm);
                 }
 
-                Snippit model = _mapper.Map<Snippit>(vm);
+                UserSnippit model = _mapper.Map<UserSnippit>(vm);
                 await _service.Update(model);
 
                 return RedirectToAction(nameof(Index));
@@ -105,7 +105,7 @@
                     return NotFound();
                 }
 
-                Snippit model = await _service.Get(id);
+                UserSnippit model = await _service.Get(id);
 
                 if (model == null)
                 {
@@ -126,7 +126,7 @@
                     return NotFound();
                 }
 
-                Snippit model = _mapper.Map<Snippit>(vm);
+                UserSnippit model = _mapper.Map<UserSnippit>(vm);
                 await _service.Delete(model);
                 return RedirectToAction(nameof(Index));
             }

@@ -8,38 +8,37 @@
 
     public class SnippitService : ISnippitService
     {
-        private IGenericRepo<Snippit> _repo;
+        private IGenericRepo<UserSnippit> _repo;
 
-        public SnippitService(IGenericRepo<Snippit> repo)
+        public SnippitService(IGenericRepo<UserSnippit> repo)
         {
             _repo = repo;
         }
 
-        public async Task<IList<Snippit>> Get()
+        public async Task<IList<UserSnippit>> Get(int? id)
         {
-            IList<Snippit> snippitlist = await _repo.GetEntitiesAsync();
+            IList<UserSnippit> snippitlist = await _repo.GetEntitiesAsync();
             return snippitlist;
         }
 
-        public async Task<Snippit> Get(int id)
+        public async Task<UserSnippit> Get(int id)
         {
             return await _repo.GetEntityAsync(id);
         }
 
-        public async Task Add(Snippit snippit)
+        public async Task Add(UserSnippit snippit)
         {
             await _repo.AddEntityAsync(snippit);
         }
 
-        public async Task Update(Snippit snippit)
+        public async Task Update(UserSnippit snippit)
         {
             await _repo.UpdateEntityAsync(snippit);
         }
 
-        public async Task Delete(Snippit snippit)
+        public async Task Delete(UserSnippit snippit)
         {
             await _repo.DeleteEntityAsync(snippit);
         }
     }
 }
-

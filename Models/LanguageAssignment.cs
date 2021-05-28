@@ -6,7 +6,7 @@
 
         public int LanguageId { get; set; }
 
-        public Snippit Snippit { get; set; }
+        public UserSnippit Snippit { get; set; }
 
         public Language Language { get; set; }
     }

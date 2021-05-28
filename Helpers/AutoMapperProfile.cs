@@ -3,22 +3,22 @@
     using AutoMapper;
 
     using Snippit.Models;
-    using Snippit.Models.SnippitViewModels;
+    using Snippit.Models.ViewModels;
 
     public class AutoMapperProfile : Profile
         {
         public AutoMapperProfile()
         {
-                CreateMap<Snippit, SnippitDetailViewModel>()
+                CreateMap<UserSnippit, SnippitDetailViewModel>()
                                 .ReverseMap();
 
-                CreateMap<Snippit, SnippitCreateViewModel>()
+                CreateMap<UserSnippit, SnippitCreateViewModel>()
                                 .ReverseMap();
 
-                CreateMap<Snippit, SnippitEditViewModel>()
+                CreateMap<UserSnippit, SnippitEditViewModel>()
                                 .ReverseMap();
 
-                CreateMap<Snippit, SnippitDeleteViewModel>()
+                CreateMap<UserSnippit, SnippitDeleteViewModel>()
                                 .ReverseMap();
 
                 CreateMap<Author, AuthorViewModel>()

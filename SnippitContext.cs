@@ -11,7 +11,7 @@
         {
         }
 
-        public DbSet<Snippit> Snippits { get; set; }
+        public DbSet<UserSnippit> Snippits { get; set; }
 
         public DbSet<Language> Languages { get; set; }
 
@@ -21,7 +21,7 @@
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Snippit>()
+            modelBuilder.Entity<UserSnippit>()
                         .ToTable("Language");
             modelBuilder.Entity<Moderator>()
                         .ToTable("Moderator");

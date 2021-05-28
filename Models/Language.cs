@@ -10,7 +10,7 @@
 
         public int AuthorId { get; set; }
 
-        public Snippit Snippit { get; set; }
+        public UserSnippit Snippit { get; set; }
 
         public enum Languages
         {

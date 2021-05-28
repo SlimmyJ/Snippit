@@ -8,14 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\_ViewImports.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Views\_ViewImports.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="bootstrap" Version="5.0.1" />
@@ -26,11 +18,13 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\Snippit\" />
     <Folder Include="Views\Authors\" />
     <Folder Include="Views\Moderators\" />
     <Folder Include="Views\Shared\" />
