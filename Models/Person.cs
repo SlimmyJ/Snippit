@@ -2,11 +2,11 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    public abstract class Person
+    public abstract class Person : BaseModel
     {
-        public int Id { get; set; }
-
         public string FirstName { get; set; }
+
+        public string AreaCode { get; set; }
 
         public string LastName { get; set; }
 

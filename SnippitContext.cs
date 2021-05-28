@@ -34,10 +34,9 @@
                         .HasKey(
                             c => new
                                  {
-                                     c.LanguageID,
-                                     c.SnippitID
+                                     LanguageID = c.LanguageId,
+                                     SnippitID = c.SnippitId
                                  });
         }
     }
 }
-

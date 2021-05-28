@@ -4,10 +4,8 @@
     {
     }
 
-    public class Language
+    public class Language : BaseModel
     {
-        public int LanguageId { get; set; }
-
         public int SnippitId { get; set; }
 
         public int AuthorId { get; set; }

@@ -2,9 +2,9 @@
 {
     public class LanguageAssignment
     {
-        public int SnippitID { get; set; }
+        public int SnippitId { get; set; }
 
-        public int LanguageID { get; set; }
+        public int LanguageId { get; set; }
 
         public Snippit Snippit { get; set; }
 

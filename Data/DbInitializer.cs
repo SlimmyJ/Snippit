@@ -24,7 +24,8 @@
                                    AuthorId = 1,
                                    LanguageId = 1,
                                    Rating = 4,
-                                   Title = "Standard animal class"
+                                   Title = "Standard animal class",
+                                   Content = "Code content"
                                },
                                new Snippit
                                {
@@ -69,6 +70,10 @@
                                  {
                                      FirstName = "Jens",
                                      LastName = "VV",
+                                     Id = 1,
+                                     AreaCode = "9000",
+                                     AuthorId = 2,
+                                     AccessLevel = 1
                                  },
                              };
 

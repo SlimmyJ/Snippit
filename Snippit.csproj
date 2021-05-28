@@ -23,6 +23,7 @@
   <ItemGroup>
     <Folder Include="Views\Authors\" />
     <Folder Include="Views\Moderators\" />
+    <Folder Include="Views\Shared\" />
     <Folder Include="Views\Snippits\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\css\" />
