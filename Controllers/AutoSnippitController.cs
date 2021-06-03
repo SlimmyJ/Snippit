@@ -22,7 +22,7 @@
         public async Task<IActionResult> Index()
         {
             SnippitViewModel vm = new SnippitViewModel();
-            vm.Snippits = await _service.Get();
+            vm.Snippits = await _service.GetAll();
 
             return View(vm);
         }
@@ -107,14 +107,6 @@
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!SnippitExists(snippit.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
                 }
                 return RedirectToAction(nameof(Index));
             }

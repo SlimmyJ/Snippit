@@ -16,13 +16,13 @@
             _repo = repo;
         }
 
-        public async Task<IList<UserSnippit>> Get(int? id)
+        public async Task<IList<UserSnippit>> GetAll()
         {
             IList<UserSnippit> snippitlist = await _repo.GetEntitiesAsync();
             return snippitlist;
         }
 
-        public async Task<UserSnippit> Get(int id)
+        public async Task<UserSnippit> Get(int? id)
         {
             return await _repo.GetEntityAsync(id);
         }

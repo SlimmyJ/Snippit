@@ -16,7 +16,7 @@
 
         Task<IList<T>> GetEntitiesAsync();
 
-        Task<T> GetEntityAsync(int id);
+        Task<T> GetEntityAsync(int? id);
 
         Task<bool> EntityExistsAsync(int id);
     }

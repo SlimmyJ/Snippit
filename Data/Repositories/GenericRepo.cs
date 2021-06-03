@@ -44,7 +44,7 @@
             return await dbset.ToListAsync();
         }
 
-        public async Task<T> GetEntityAsync(int id)
+        public async Task<T> GetEntityAsync(int? id)
         {
             var dbset = _context.Set<T>();
             return await dbset.FindAsync(id);

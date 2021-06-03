@@ -7,14 +7,16 @@
 
     public interface ISnippitService
     {
-        Task<IList<UserSnippit>> Get(int? id);
+        Task<IList<UserSnippit>> GetAll();
 
-        Task<UserSnippit> Get(int id);
+        Task<UserSnippit> Get(int? id);
 
         Task Add(UserSnippit snippit);
 
         Task Update(UserSnippit snippit);
 
         Task Delete(UserSnippit snippit);
+
+
     }
 }
